@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-// TODO: Import the Survey component
-// TODO: Import the Secret component
+import Survey from '@/components/Survey'
+import Secret from '@/components/Secret'
+import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -12,8 +13,22 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/survey',
+      name: 'Survey',
+      component: Survey
+    },
+    {
+      path: '/secret',
+      name: 'Secret',
+      component: Secret
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About
     }
-    // Add the Survey route definition
-    // Add the Secret route definition
+    
   ]
 })
