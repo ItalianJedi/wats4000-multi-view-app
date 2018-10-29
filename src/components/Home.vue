@@ -36,8 +36,8 @@
 
         <p>How did you discover us?<br>
           <label v-for="discover in discoverUs">
-            <input type="checkbox" v-model="discoverUs" v-bind:value="discoverUs.value">
-            {{ discoverUs.text }}
+            <input type="checkbox" v-model="discoverUs" v-bind:value="discover.value">
+            {{ discover.text }}
           </label>
         </p>
 
@@ -72,7 +72,7 @@ export default {
       showForm: true,
       showError: false,
       image: {
-          src: "static/images/owl.png",
+          src: "static/images/owl.jpg",
           title: "Web Dev Owl"
       },
       discoverUs: [
